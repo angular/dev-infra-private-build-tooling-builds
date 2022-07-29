@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-a234174980b29771d223451a338005a417d36530",
+  "version": "0.0.0-1609543e7d76ccf66fbbab1bfa8ae4c2767adb80",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -32,6 +32,7 @@
     "@types/send": "^0.17.1",
     "@types/tmp": "^0.2.1",
     "@types/uuid": "^8.3.1",
+    "@types/ws": "8.5.3",
     "@types/yargs": "^17.0.0",
     "browser-sync": "^2.27.7",
     "clang-format": "1.8.0",
@@ -123,7 +124,6 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "karma-requirejs": "^1.1.0",
     "karma-sourcemap-loader": "^0.3.8",
-    "keytar": "^7.9.0",
     "minimatch": "^5.0.0",
     "multimatch": "^6.0.0",
     "nock": "^13.0.3",
@@ -140,6 +140,7 @@
     "typed-graphqlify": "^3.1.1",
     "wait-on": "^6.0.0",
     "which": "^2.0.2",
+    "ws": "^8.8.0",
     "yaml": "^2.0.0",
     "zone.js": "^0.11.4"
   },
