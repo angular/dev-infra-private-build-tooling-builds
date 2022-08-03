@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-8fa614960c2b5950438d4d33292ac16c23180d77",
+  "version": "0.0.0-d2f9d2f493ec99f89a1db2777e2b27c1f5b278e9",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -15,7 +15,7 @@
   },
   "packageManager": "yarn@3.2.1",
   "dependencies": {
-    "@angular-devkit/build-angular": "14.1.0-rc.3",
+    "@angular-devkit/build-angular": "14.2.0-next.0",
     "@angular/benchpress": "0.3.0",
     "@babel/core": "^7.16.0",
     "@bazel/buildifier": "5.1.0",
@@ -51,20 +51,20 @@
   "devDependencies": {
     "@actions/core": "^1.4.0",
     "@actions/github": "^5.0.0",
-    "@angular/animations": "14.1.0-rc.0",
+    "@angular/animations": "14.2.0-next.0",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
-    "@angular/cdk": "14.1.0-rc.0",
-    "@angular/cli": "14.1.0-rc.3",
-    "@angular/common": "14.1.0-rc.0",
-    "@angular/compiler": "14.1.0-rc.0",
-    "@angular/compiler-cli": "14.1.0-rc.0",
-    "@angular/core": "14.1.0-rc.0",
+    "@angular/cdk": "14.2.0-next.1",
+    "@angular/cli": "14.2.0-next.0",
+    "@angular/common": "14.2.0-next.0",
+    "@angular/compiler": "14.2.0-next.0",
+    "@angular/compiler-cli": "14.2.0-next.0",
+    "@angular/core": "14.2.0-next.0",
     "@angular/fire": "^7.1.0-rc",
-    "@angular/forms": "14.1.0-rc.0",
-    "@angular/material": "14.1.0-rc.0",
-    "@angular/platform-browser": "14.1.0-rc.0",
-    "@angular/platform-browser-dynamic": "14.1.0-rc.0",
-    "@angular/router": "14.1.0-rc.0",
+    "@angular/forms": "14.2.0-next.0",
+    "@angular/material": "14.2.0-next.1",
+    "@angular/platform-browser": "14.2.0-next.0",
+    "@angular/platform-browser-dynamic": "14.2.0-next.0",
+    "@angular/router": "14.2.0-next.0",
     "@bazel/bazelisk": "^1.11.0",
     "@bazel/jasmine": "5.5.3",
     "@google-cloud/firestore": "^6.0.0",
@@ -150,6 +150,6 @@
     }
   },
   "resolutions": {
-    "@angular/benchpress/@angular/core": "14.1.0-rc.0"
+    "@angular/benchpress/@angular/core": "14.2.0-next.0"
   }
 }
