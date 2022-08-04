@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-d2f9d2f493ec99f89a1db2777e2b27c1f5b278e9",
+  "version": "0.0.0-de4721ff681e642496aeae579adcefeaab337aef",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
