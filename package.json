@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-c5cbcd31cf2dc3680d247db84fbb76f52cf2934d",
+  "version": "0.0.0-8df5d6b1bd0110344dcd29e98ee399e75b648ea8",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -53,7 +53,7 @@
     "@actions/github": "^5.0.0",
     "@angular/animations": "14.2.0-rc.0",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
-    "@angular/cdk": "14.2.0-next.2",
+    "@angular/cdk": "14.2.0-rc.0",
     "@angular/cli": "14.2.0-rc.0",
     "@angular/common": "14.2.0-rc.0",
     "@angular/compiler": "14.2.0-rc.0",
@@ -61,7 +61,7 @@
     "@angular/core": "14.2.0-rc.0",
     "@angular/fire": "^7.1.0-rc",
     "@angular/forms": "14.2.0-rc.0",
-    "@angular/material": "14.2.0-next.2",
+    "@angular/material": "14.2.0-rc.0",
     "@angular/platform-browser": "14.2.0-rc.0",
     "@angular/platform-browser-dynamic": "14.2.0-rc.0",
     "@angular/router": "14.2.0-rc.0",
