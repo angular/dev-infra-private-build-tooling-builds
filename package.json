@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-4b84feb3bfdcbb88dd0199dd3593658da61da404",
+  "version": "0.0.0-22ee70a0862c858ff00effe992caa5133a36bd6e",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -51,20 +51,20 @@
   "devDependencies": {
     "@actions/core": "^1.4.0",
     "@actions/github": "^5.0.0",
-    "@angular/animations": "14.2.0-rc.0",
+    "@angular/animations": "15.0.0-next.0",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
     "@angular/cdk": "14.2.0-rc.0",
     "@angular/cli": "14.2.0-rc.0",
-    "@angular/common": "14.2.0-rc.0",
-    "@angular/compiler": "14.2.0-rc.0",
-    "@angular/compiler-cli": "14.2.0-rc.0",
-    "@angular/core": "14.2.0-rc.0",
+    "@angular/common": "15.0.0-next.0",
+    "@angular/compiler": "15.0.0-next.0",
+    "@angular/compiler-cli": "15.0.0-next.0",
+    "@angular/core": "15.0.0-next.0",
     "@angular/fire": "^7.1.0-rc",
-    "@angular/forms": "14.2.0-rc.0",
+    "@angular/forms": "15.0.0-next.0",
     "@angular/material": "14.2.0-rc.0",
-    "@angular/platform-browser": "14.2.0-rc.0",
-    "@angular/platform-browser-dynamic": "14.2.0-rc.0",
-    "@angular/router": "14.2.0-rc.0",
+    "@angular/platform-browser": "15.0.0-next.0",
+    "@angular/platform-browser-dynamic": "15.0.0-next.0",
+    "@angular/router": "15.0.0-next.0",
     "@bazel/bazelisk": "^1.11.0",
     "@bazel/jasmine": "5.5.3",
     "@google-cloud/firestore": "^6.0.0",
@@ -154,6 +154,6 @@
     }
   },
   "resolutions": {
-    "@angular/benchpress/@angular/core": "14.2.0-rc.0"
+    "@angular/benchpress/@angular/core": "15.0.0-next.0"
   }
 }
