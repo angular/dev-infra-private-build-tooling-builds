@@ -12,6 +12,7 @@ filegroup(
         "@npm//@angular/build-tooling/bazel/browsers:files",
         "@npm//@angular/build-tooling/bazel/constraints:files",
         "@npm//@angular/build-tooling/bazel/esbuild:files",
+        "@npm//@angular/build-tooling/bazel/git-toolchain:files",
         "@npm//@angular/build-tooling/bazel/http-server:files",
         "@npm//@angular/build-tooling/bazel/integration:files",
         "@npm//@angular/build-tooling/bazel/karma:files",
