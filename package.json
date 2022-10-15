@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-798dbd9f8e53691cb3cf0daf0cb39c0eb9f141b6",
+  "version": "0.0.0-658ea9ec012d34882807f0be093812961af79cce",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -118,6 +118,7 @@
     "jasmine": "~4.4.0",
     "jasmine-core": "~4.4.0",
     "jsdom": "^20.0.0",
+    "jsonc-parser": "^3.2.0",
     "karma": "^6.3.15",
     "karma-chrome-launcher": "^3.1.0",
     "karma-coverage": "~2.2.0",
