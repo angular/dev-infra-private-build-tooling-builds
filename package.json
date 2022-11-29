@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-856c3ab37a47984cb859f1dc73c729e9e072cd0e",
+  "version": "0.0.0-01577756fd11a757a0eed9185eb326ba49726b8b",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -32,7 +32,7 @@
     "@types/selenium-webdriver": "^4.0.18",
     "@types/send": "^0.17.1",
     "@types/tmp": "^0.2.1",
-    "@types/uuid": "^8.3.1",
+    "@types/uuid": "^9.0.0",
     "@types/ws": "8.5.3",
     "@types/yargs": "^17.0.0",
     "browser-sync": "^2.27.7",
