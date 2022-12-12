@@ -9,8 +9,6 @@
 import * as path from 'path';
 
 import {createEsbuildAngularOptimizePlugin} from '@angular/build-tooling/shared-scripts/angular-optimization/esbuild-plugin.mjs';
-import {createEs2015LinkerPlugin} from '@angular/compiler-cli/linker/babel';
-import {ConsoleLogger, NodeJSFileSystem, LogLevel} from '@angular/compiler-cli';
 import {GLOBAL_DEFS_FOR_TERSER_WITH_AOT} from '@angular/compiler-cli/private/tooling';
 
 /** Root path pointing to the app bundle source entry-point file. */
@@ -31,13 +29,6 @@ function isFileSideEffectFree(filePath) {
   return !filePath.includes(entryPointBasepath);
 }
 
-/** Babel plugin running the Angular linker. */
-const linkerBabelPlugin = createEs2015LinkerPlugin({
-  fileSystem: new NodeJSFileSystem(),
-  logger: new ConsoleLogger(LogLevel.warn),
-  linkerJitMode: false,
-});
-
 export default {
   // Note: We prefer `.mjs` here as this is the extension used by Angular APF packages.
   resolveExtensions: ['.mjs', '.js'],
@@ -48,9 +39,30 @@ export default {
   treeShaking: true,
   pure: ['forwardRef'],
   legalComments: 'none',
+  supported: {
+    // We always downlevel `async/await` when bundling apps. The Angular CLI does the
+    // same with its ESBuild experimental builder, and with the non-esbuild pipeline
+    // Babel is used to downlevel async/await. See:
+    // https://github.com/angular/angular-cli/blob/afe9feaa45913cbebe7f22c678d693d96f38584a/packages/angular_devkit/build_angular/src/babel/webpack-loader.ts#L111
+    // https://github.com/angular/angular-cli/blob/afe9feaa45913/packages/angular_devkit/build_angular/src/builders/browser-esbuild/index.ts#L313-L318.
+    'async-await': false,
+  },
   // ESBuild requires the `define` option to take a string-based dictionary.
   define: convertObjectToStringDictionary(GLOBAL_DEFS_FOR_TERSER_WITH_AOT),
-  plugins: [createEsbuildAngularOptimizePlugin(isFileSideEffectFree, [linkerBabelPlugin])],
+  plugins: [
+    await createEsbuildAngularOptimizePlugin({
+      optimize: {
+        isFileSideEffectFree: isFileSideEffectFree,
+      },
+      downlevelAsyncGeneratorsIfPresent: true,
+      enableLinker: {
+        ensureNoPartialDeclaration: false,
+        linkerOptions: {
+          linkerJitMode: false,
+        },
+      },
+    }),
+  ],
 };
 
 /** Converts an object to a string dictionary. */
