@@ -60,8 +60,8 @@ def _spec_entrypoint_impl(ctx):
 
     # Note: `to_list()` is an expensive operation but we need to do this for every
     # dependency here in order to be able to filter out spec files from depsets.
-    direct_spec_files = depset(transitive = spec_direct_deps).to_list()
-    spec_files = _filter_files(direct_spec_files, ["spec", "test"])
+    all_spec_files = depset(transitive = spec_all_deps).to_list()
+    spec_files = _filter_files(all_spec_files, ["spec", "test"])
 
     # Note: `to_list()` is an expensive operation but we need to do this for every
     # dependency here in order to be able to filter out spec files from depsets.
@@ -86,7 +86,7 @@ def _spec_entrypoint_impl(ctx):
 spec_entrypoint = rule(
     implementation = _spec_entrypoint_impl,
     attrs = {
-        "deps": attr.label_list(allow_files = False, mandatory = True),
-        "bootstrap": attr.label_list(allow_files = False, mandatory = True),
+        "deps": attr.label_list(allow_files = True, mandatory = True),
+        "bootstrap": attr.label_list(allow_files = True, mandatory = True),
     },
 )
