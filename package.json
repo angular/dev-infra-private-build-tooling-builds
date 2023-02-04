@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-f69e08fd80cf97fcb4550af1e46fee3d56a792cb",
+  "version": "0.0.0-3f7373f1303ff3184912a8d28a6cd681b76790fa",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -20,7 +20,7 @@
     "@babel/core": "^7.16.0",
     "@babel/helper-annotate-as-pure": "^7.18.6",
     "@babel/plugin-proposal-async-generator-functions": "^7.20.1",
-    "@bazel/buildifier": "6.0.0",
+    "@bazel/buildifier": "6.0.1",
     "@bazel/concatjs": "5.7.3",
     "@bazel/esbuild": "5.7.3",
     "@bazel/protractor": "5.7.3",
