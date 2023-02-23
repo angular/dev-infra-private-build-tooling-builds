@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-20a2a92bf33a28fabd71c7db49d921fb418c694b",
+  "version": "0.0.0-145da9e20bbdea9bfdc5e30aa583547e928f4706",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -132,7 +132,7 @@
     "karma-requirejs": "^1.1.0",
     "karma-sourcemap-loader": "^0.4.0",
     "license-checker": "^25.0.1",
-    "minimatch": "^6.0.0",
+    "minimatch": "^7.0.0",
     "multimatch": "^6.0.0",
     "nock": "^13.0.3",
     "node-fetch": "^3.2.5",
