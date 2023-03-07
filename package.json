@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-fc4d34a1a8d30c197533a51c9af1bb52c9356094",
+  "version": "0.0.0-37e5bac6f944cd4bec81d0dad084858cbb75a7cb",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -152,7 +152,7 @@
     "which": "^3.0.0",
     "ws": "^8.8.0",
     "yaml": "^2.0.0",
-    "zone.js": "^0.12.0"
+    "zone.js": "^0.13.0"
   },
   "dependenciesMeta": {
     "re2": {
