@@ -1,11 +1,3 @@
-import { Rule } from 'stylelint';
-declare const _default: {
-    default?: {
-        ruleName: string;
-        rule: Rule<any, any>;
-    } | undefined;
-} | {
-    ruleName: string;
-    rule: Rule<any, any>;
-};
+/// <reference types="stylelint/types/stylelint" />
+declare const _default: import("stylelint").Plugin;
 export default _default;
