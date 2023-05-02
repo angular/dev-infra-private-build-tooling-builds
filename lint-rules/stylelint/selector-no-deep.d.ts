@@ -1,3 +1,3 @@
-/// <reference types="stylelint/types/stylelint" />
-declare const _default: import("stylelint").Plugin;
+import stylelint from 'stylelint';
+declare const _default: stylelint.Plugin;
 export default _default;
