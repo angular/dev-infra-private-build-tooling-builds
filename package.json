@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-41a75d978e2d7b8a471cc9c84766a758b1e68ea4",
+  "version": "0.0.0-cbce47d9478ce4e4cb5147c8b68f3f6afe0fe794",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -15,7 +15,7 @@
   },
   "packageManager": "yarn@3.5.1",
   "dependencies": {
-    "@angular-devkit/build-angular": "16.0.0",
+    "@angular-devkit/build-angular": "16.1.0-next.0",
     "@angular/benchpress": "0.3.0",
     "@babel/core": "^7.16.0",
     "@babel/helper-annotate-as-pure": "^7.18.6",
@@ -56,7 +56,7 @@
     "@angular/animations": "16.1.0-next.0",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
     "@angular/cdk": "16.1.0-next.0",
-    "@angular/cli": "16.0.0",
+    "@angular/cli": "16.1.0-next.0",
     "@angular/common": "16.1.0-next.0",
     "@angular/compiler": "16.1.0-next.0",
     "@angular/compiler-cli": "16.1.0-next.0",
