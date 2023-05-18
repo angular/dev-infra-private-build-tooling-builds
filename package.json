@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-2955b65f558a3d2012148825f8c8b9378e9e7e2a",
+  "version": "0.0.0-06c7cd9645d21590ecc65dd9c9b8aecc918a3fce",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -73,7 +73,7 @@
     "@google-cloud/firestore": "^6.0.0",
     "@google-cloud/storage": "^6.0.0",
     "@octokit/auth-app": "4.0.12",
-    "@octokit/core": "4.2.0",
+    "@octokit/core": "4.2.1",
     "@octokit/graphql": "5.0.5",
     "@octokit/graphql-schema": "14.5.0",
     "@octokit/openapi-types": "17.2.0",
