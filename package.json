@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-bdb48f19deacad160015dc3f440bbfb03232655e",
+  "version": "0.0.0-7e551e4b6e276e9876d1d69529dccc5679274dcf",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -78,7 +78,7 @@
     "@octokit/graphql-schema": "14.5.0",
     "@octokit/openapi-types": "17.2.0",
     "@octokit/plugin-paginate-rest": "6.1.0",
-    "@octokit/plugin-rest-endpoint-methods": "7.1.0",
+    "@octokit/plugin-rest-endpoint-methods": "7.1.1",
     "@octokit/request-error": "3.0.3",
     "@octokit/rest": "19.0.8",
     "@octokit/types": "9.2.2",
