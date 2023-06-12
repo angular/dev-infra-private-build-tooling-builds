@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-2ec31a92100367a52100fca54d5e8c7c78cb149c",
+  "version": "0.0.0-6fa749665a1cbedb4944c3ba4c5465a3d89afd65",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -15,7 +15,7 @@
   },
   "packageManager": "yarn@3.6.0",
   "dependencies": {
-    "@angular-devkit/build-angular": "16.1.0-next.1",
+    "@angular-devkit/build-angular": "16.1.0-rc.0",
     "@angular/benchpress": "0.3.0",
     "@babel/core": "^7.16.0",
     "@babel/helper-annotate-as-pure": "^7.18.6",
@@ -53,20 +53,20 @@
   "devDependencies": {
     "@actions/core": "^1.4.0",
     "@actions/github": "^5.0.0",
-    "@angular/animations": "16.1.0-next.3",
+    "@angular/animations": "16.1.0-rc.0",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
-    "@angular/cdk": "16.1.0-next.1",
-    "@angular/cli": "16.1.0-next.1",
-    "@angular/common": "16.1.0-next.3",
-    "@angular/compiler": "16.1.0-next.3",
-    "@angular/compiler-cli": "16.1.0-next.3",
-    "@angular/core": "16.1.0-next.3",
+    "@angular/cdk": "16.1.0-rc.0",
+    "@angular/cli": "16.1.0-rc.0",
+    "@angular/common": "16.1.0-rc.0",
+    "@angular/compiler": "16.1.0-rc.0",
+    "@angular/compiler-cli": "16.1.0-rc.0",
+    "@angular/core": "16.1.0-rc.0",
     "@angular/fire": "^7.1.0-rc",
-    "@angular/forms": "16.1.0-next.3",
-    "@angular/material": "16.1.0-next.1",
-    "@angular/platform-browser": "16.1.0-next.3",
-    "@angular/platform-browser-dynamic": "16.1.0-next.3",
-    "@angular/router": "16.1.0-next.3",
+    "@angular/forms": "16.1.0-rc.0",
+    "@angular/material": "16.1.0-rc.0",
+    "@angular/platform-browser": "16.1.0-rc.0",
+    "@angular/platform-browser-dynamic": "16.1.0-rc.0",
+    "@angular/router": "16.1.0-rc.0",
     "@bazel/bazelisk": "^1.11.0",
     "@bazel/ibazel": "^0.16.2",
     "@bazel/jasmine": "5.8.1",
@@ -107,7 +107,7 @@
     "@yarnpkg/lockfile": "^1.1.0",
     "chalk": "^5.0.1",
     "cli-progress": "^3.7.0",
-    "conventional-commits-parser": "^3.2.1",
+    "conventional-commits-parser": "^4.0.0",
     "ejs": "^3.1.6",
     "firebase": "9.22.1",
     "firebase-admin": "^11.0.0",
@@ -161,6 +161,6 @@
     }
   },
   "resolutions": {
-    "@angular/benchpress/@angular/core": "16.1.0-next.3"
+    "@angular/benchpress/@angular/core": "16.1.0-rc.0"
   }
 }
