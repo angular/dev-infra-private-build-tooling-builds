@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-222de0bc054a6d2231243f5ea5ea97991a6a722a",
+  "version": "0.0.0-096850911ca87cb64aa1fdae777656e7f69d2c64",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -145,7 +145,7 @@
     "spdx-satisfies": "^5.0.1",
     "stylelint": "^15.1.0",
     "supports-color": "9.4.0",
-    "terser": "5.18.2",
+    "terser": "5.19.0",
     "ts-node": "^10.8.1",
     "tslint": "^6.1.3",
     "typed-graphqlify": "^3.1.1",
