@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-9f85ae4af594b0ae4d17c7a1d466f8c203c688e6",
+  "version": "0.0.0-2ce349fbdb846386d006f366bdce5865f2900c68",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -13,7 +13,7 @@
       "default": "./*"
     }
   },
-  "packageManager": "yarn@3.6.1",
+  "packageManager": "yarn@3.6.2",
   "dependencies": {
     "@angular-devkit/build-angular": "16.2.0-rc.1",
     "@angular/benchpress": "0.3.0",
