@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-f245bb8cf1942e3fb147febae2dc31dcb84fd5fa",
+  "version": "0.0.0-f8e27d17267ad050128bd2f45dce78433f829fd2",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -40,7 +40,7 @@
     "@types/yargs": "^17.0.0",
     "browser-sync": "^2.27.7",
     "clang-format": "1.8.0",
-    "marked": "^8.0.1",
+    "marked": "^9.0.0",
     "nunjucks": "^3.2.4",
     "prettier": "3.0.3",
     "protractor": "^7.0.0",
