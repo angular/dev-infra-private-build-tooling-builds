@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-ce0e6790abb6d2b1885925797ba27e7928682637",
+  "version": "0.0.0-f245bb8cf1942e3fb147febae2dc31dcb84fd5fa",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -29,7 +29,9 @@
     "@bazel/typescript": "5.8.1",
     "@microsoft/api-extractor": "7.36.4",
     "@types/browser-sync": "^2.26.3",
+    "@types/marked": "^5.0.1",
     "@types/node": "16.10.9",
+    "@types/nunjucks": "^3.2.3",
     "@types/selenium-webdriver": "^4.0.18",
     "@types/send": "^0.17.1",
     "@types/tmp": "^0.2.1",
@@ -38,6 +40,8 @@
     "@types/yargs": "^17.0.0",
     "browser-sync": "^2.27.7",
     "clang-format": "1.8.0",
+    "marked": "^8.0.1",
+    "nunjucks": "^3.2.4",
     "prettier": "3.0.3",
     "protractor": "^7.0.0",
     "selenium-webdriver": "4.12.0",
