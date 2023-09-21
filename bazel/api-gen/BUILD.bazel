@@ -4,7 +4,7 @@ package(default_visibility = ["//visibility:public"])
 filegroup(
     name = "files",
     srcs = glob(["*"]) + [
-        "//api-gen/extraction:files",
-        "//api-gen/rendering:files",
+        "@npm//@angular/build-tooling/bazel/api-gen/extraction:files",
+        "@npm//@angular/build-tooling/bazel/api-gen/rendering:files",
     ],
 )
