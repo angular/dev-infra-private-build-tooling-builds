@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-680aab4562e5bb684518ca496cb449a6c447601d",
+  "version": "0.0.0-d326e233407f4a0d7e2208f8fb3df4e8a52b0f71",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -74,7 +74,7 @@
     "@bazel/bazelisk": "^1.11.0",
     "@bazel/ibazel": "^0.16.2",
     "@bazel/jasmine": "5.8.1",
-    "@google-cloud/firestore": "^6.0.0",
+    "@google-cloud/firestore": "^7.0.0",
     "@google-cloud/storage": "^7.0.0",
     "@octokit/auth-app": "6.0.1",
     "@octokit/core": "5.0.1",
