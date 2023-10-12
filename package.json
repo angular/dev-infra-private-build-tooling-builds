@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-580720393a3f2b99d490843f6d8c0e7c0cfa63cf",
+  "version": "0.0.0-4dd009a3727dd1b49d6bc9d94a0a6bd5f8ebf388",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -15,7 +15,7 @@
   },
   "packageManager": "yarn@3.6.4",
   "dependencies": {
-    "@angular-devkit/build-angular": "17.0.0-next.6",
+    "@angular-devkit/build-angular": "17.0.0-next.9",
     "@angular/benchpress": "0.3.0",
     "@babel/core": "^7.16.0",
     "@babel/helper-annotate-as-pure": "^7.18.6",
@@ -57,20 +57,20 @@
   "devDependencies": {
     "@actions/core": "^1.4.0",
     "@actions/github": "^5.0.0",
-    "@angular/animations": "17.0.0-next.6",
+    "@angular/animations": "17.0.0-next.8",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
-    "@angular/cdk": "17.0.0-next.5",
-    "@angular/cli": "17.0.0-next.6",
-    "@angular/common": "17.0.0-next.6",
-    "@angular/compiler": "17.0.0-next.6",
-    "@angular/compiler-cli": "17.0.0-next.6",
-    "@angular/core": "17.0.0-next.6",
+    "@angular/cdk": "17.0.0-next.7",
+    "@angular/cli": "17.0.0-next.9",
+    "@angular/common": "17.0.0-next.8",
+    "@angular/compiler": "17.0.0-next.8",
+    "@angular/compiler-cli": "17.0.0-next.8",
+    "@angular/core": "17.0.0-next.8",
     "@angular/fire": "^7.1.0-rc",
-    "@angular/forms": "17.0.0-next.6",
-    "@angular/material": "17.0.0-next.5",
-    "@angular/platform-browser": "17.0.0-next.6",
-    "@angular/platform-browser-dynamic": "17.0.0-next.6",
-    "@angular/router": "17.0.0-next.6",
+    "@angular/forms": "17.0.0-next.8",
+    "@angular/material": "17.0.0-next.7",
+    "@angular/platform-browser": "17.0.0-next.8",
+    "@angular/platform-browser-dynamic": "17.0.0-next.8",
+    "@angular/router": "17.0.0-next.8",
     "@bazel/bazelisk": "^1.11.0",
     "@bazel/ibazel": "^0.16.2",
     "@bazel/jasmine": "5.8.1",
@@ -79,10 +79,10 @@
     "@octokit/auth-app": "6.0.1",
     "@octokit/core": "5.0.1",
     "@octokit/graphql": "7.0.2",
-    "@octokit/graphql-schema": "14.33.0",
+    "@octokit/graphql-schema": "14.37.0",
     "@octokit/openapi-types": "19.0.0",
     "@octokit/plugin-paginate-rest": "9.0.0",
-    "@octokit/plugin-rest-endpoint-methods": "10.0.0",
+    "@octokit/plugin-rest-endpoint-methods": "10.0.1",
     "@octokit/request-error": "5.0.1",
     "@octokit/rest": "20.0.2",
     "@octokit/types": "12.0.0",
@@ -165,6 +165,6 @@
     }
   },
   "resolutions": {
-    "@angular/benchpress/@angular/core": "17.0.0-next.6"
+    "@angular/benchpress/@angular/core": "17.0.0-next.8"
   }
 }
