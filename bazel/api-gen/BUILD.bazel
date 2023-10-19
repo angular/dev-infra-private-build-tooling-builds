@@ -5,6 +5,7 @@ filegroup(
     name = "files",
     srcs = glob(["*"]) + [
         "@npm//@angular/build-tooling/bazel/api-gen/extraction:files",
+        "@npm//@angular/build-tooling/bazel/api-gen/manifest:files",
         "@npm//@angular/build-tooling/bazel/api-gen/rendering:files",
     ],
 )
