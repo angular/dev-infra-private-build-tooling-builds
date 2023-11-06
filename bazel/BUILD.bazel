@@ -18,6 +18,7 @@ filegroup(
         "@npm//@angular/build-tooling/bazel/integration:files",
         "@npm//@angular/build-tooling/bazel/karma:files",
         "@npm//@angular/build-tooling/bazel/map-size-tracking:files",
+        "@npm//@angular/build-tooling/bazel/markdown_to_html:files",
         "@npm//@angular/build-tooling/bazel/private:files",
         "@npm//@angular/build-tooling/bazel/remote-execution:files",
         "@npm//@angular/build-tooling/bazel/spec-bundling:files",
