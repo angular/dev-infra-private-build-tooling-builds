@@ -6,12 +6,11 @@
  * found in the LICENSE file at https://angular.dev/license
  */
 
-import hljs, {HighlightResult} from 'highlight.js';
+import highlightJs, {HighlightResult} from 'highlight.js';
 import {Renderer as MarkedRenderer} from 'marked';
-import {AIO_URL} from '../constants/domains';
-import {getLines} from '../helpers/code';
-import {rewriteLinks} from '../helpers/links-mapper';
-import {handleCode} from './code';
+import {AIO_URL} from '../backwards-compatibility/domains';
+import {rewriteLinks} from '../backwards-compatibility/links-mapper';
+import {splitLines} from '../transforms/code-transforms';
 
 /**
  * Custom renderer for marked that will be used to transform markdown files to HTML
@@ -20,17 +19,19 @@ import {handleCode} from './code';
 export const renderer: Partial<MarkedRenderer> = {
   code(code: string, language: string, isEscaped: boolean): string {
     let highlightResult: HighlightResult;
-    /** Use try catch because there are existing content issues when there is provided non existing language, like `typescript=` etc.
-     * In that case when there will be an error thrown `Could not find the language 'typescript=', did you forget to load/include a language module?`
-     * Let's try to use `highlightAuto`.
-     */
+    // Use try catch because there are existing content issues when there is provided nonexistent
+    // language, like `typescript=` etc. In that case when there will be an error thrown `Could not
+    // find the language 'typescript=', did you forget to load/include a language module?`
+    // Let's try to use `highlightAuto`.
     try {
-      highlightResult = language ? hljs.highlight(code, {language}) : hljs.highlightAuto(code);
+      highlightResult = language
+        ? highlightJs.highlight(code, {language})
+        : highlightJs.highlightAuto(code);
     } catch {
-      highlightResult = hljs.highlightAuto(code);
+      highlightResult = highlightJs.highlightAuto(code);
     }
 
-    const lines = getLines(highlightResult.value);
+    const lines = splitLines(highlightResult.value);
 
     return `
       <div class="docs-code" role="group">
@@ -79,8 +80,5 @@ export const renderer: Partial<MarkedRenderer> = {
         </table>
       </div>
     `;
-  },
-  codespan(code: string): string {
-    return handleCode(code);
   },
 };

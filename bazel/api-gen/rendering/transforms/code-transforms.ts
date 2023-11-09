@@ -6,6 +6,7 @@
  * found in the LICENSE file at https://angular.dev/license
  */
 
+import highlightJs from 'highlight.js';
 import {
   DocEntry,
   FunctionEntry,
@@ -18,6 +19,7 @@ import {
   isClassEntry,
   isClassMethodEntry,
   isConstantEntry,
+  isDeprecatedEntry,
   isEnumEntry,
   isFunctionEntry,
   isGetterEntry,
@@ -25,11 +27,9 @@ import {
   isSetterEntry,
   isTypeAliasEntry,
 } from '../entities/categorization';
-import hljs from 'highlight.js';
-import {HasModuleName, HasRenderableToc} from '../entities/traits';
-import {getLines, mergeGettersAndSetters, skipLifecycleHooks} from '../helpers/code';
 import {CodeLineRenderable} from '../entities/renderables';
-import {isDeprecatedEntry} from '../helpers/js-doc-tags';
+import {HasModuleName, HasRenderableToc} from '../entities/traits';
+import {filterLifecycleMethods, mergeGettersAndSetters} from './member-transforms';
 
 // Allows to generate links for code lines.
 interface CodeTableOfContentsData {
@@ -46,6 +46,14 @@ const ANGULAR_PROPERTY_DECORATORS: Record<string, string> = {
   'optional': '',
 };
 
+/** Split generated code with syntax highlighting into single lines */
+export function splitLines(text: string): string[] {
+  if (text.length === 0) {
+    return [];
+  }
+  return text.split(/\r\n|\r|\n/g);
+}
+
 /**
  * Based on provided docEntry:
  * 1. Build metadata
@@ -58,8 +66,10 @@ export function addRenderableCodeToc<T extends DocEntry & HasModuleName>(
   const metadata = mapDocEntryToCode(entry);
   appendPrefixAndSuffix(entry, metadata);
 
-  const codeWithSyntaxHighlighting = hljs.highlight(metadata.contents, {language: 'typescript'});
-  const lines = getLines(codeWithSyntaxHighlighting.value);
+  const codeWithSyntaxHighlighting = highlightJs.highlight(metadata.contents, {
+    language: 'typescript',
+  });
+  const lines = splitLines(codeWithSyntaxHighlighting.value);
   const groups = groupCodeLines(lines, metadata);
 
   return {
@@ -90,7 +100,7 @@ function groupCodeLines(lines: string[], metadata: CodeTableOfContentsData) {
 
 export function mapDocEntryToCode(entry: DocEntry): CodeTableOfContentsData {
   if (isClassEntry(entry)) {
-    const members = skipLifecycleHooks(mergeGettersAndSetters(entry.members));
+    const members = filterLifecycleMethods(mergeGettersAndSetters(entry.members));
     return getCodeTocData(members, true);
   }
 

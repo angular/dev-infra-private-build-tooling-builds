@@ -7,10 +7,15 @@
  */
 
 import {h} from 'preact';
+import {EntryType} from '../entities';
+import {
+  HEADER_CLASS_NAME,
+  HEADER_ENTRY_CATEGORY,
+  HEADER_ENTRY_LABEL,
+  HEADER_ENTRY_TITLE
+} from '../styling/css-classes';
 import {DocEntryRenderable} from '../entities/renderables';
-import {getEntryTypeDisplayName} from '../helpers/entry-type';
 import {DocsPillRow} from './docs-pill-row';
-import {HEADER_CLASS_NAME, HEADER_ENTRY_CATEGORY, HEADER_ENTRY_DESCRIPTION, HEADER_ENTRY_LABEL, HEADER_ENTRY_TITLE} from '../constants/html-classes';
 
 /** Component to render a header of the API page. */
 export function HeaderApi(props: {entry: DocEntryRenderable}) {
@@ -27,9 +32,21 @@ export function HeaderApi(props: {entry: DocEntryRenderable}) {
         </div>
       </div>
 
-      <p className={HEADER_ENTRY_DESCRIPTION} dangerouslySetInnerHTML={({__html: entry.shortHtmlDescription})}></p>
+      <p className={'adev-reference-description'} dangerouslySetInnerHTML={({__html: entry.shortHtmlDescription})}></p>
 
       <DocsPillRow links={entry.additionalLinks}/>
     </header>
   );
+}
+
+function getEntryTypeDisplayName(entryType: EntryType | string): string {
+  switch (entryType) {
+    case EntryType.NgModule:
+      return 'NgModule';
+    case EntryType.TypeAlias:
+      return 'Type Alias';
+    case EntryType.UndecoratedClass:
+      return 'Class';
+  }
+  return entryType;
 }
