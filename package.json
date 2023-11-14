@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-e1e2097ca7f8db5b67e664b8070eb0629a693c79",
+  "version": "0.0.0-1b702f8ef0d5edc53d59f23cadaccfbd6d2fd54b",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -95,6 +95,7 @@
     "@types/babel__core": "^7.1.19",
     "@types/cli-progress": "^3.9.1",
     "@types/conventional-commits-parser": "^3.0.1",
+    "@types/diff": "^5.0.8",
     "@types/ejs": "^3.0.6",
     "@types/events": "^3.0.0",
     "@types/folder-hash": "^4.0.1",
@@ -115,6 +116,7 @@
     "chalk": "^5.0.1",
     "cli-progress": "^3.7.0",
     "conventional-commits-parser": "^5.0.0",
+    "diff": "^5.1.0",
     "ejs": "^3.1.6",
     "emoji-regex": "^10.3.0",
     "firebase": "10.5.2",
