@@ -1,4 +1,6 @@
 import {diffLines, Change as DiffChange} from 'diff';
+import {CodeToken} from './index';
+import {loadWorkspaceRelativeFile} from '../../../utils';
 
 export interface DiffMetadata {
   code: string;
@@ -6,15 +8,23 @@ export interface DiffMetadata {
   linesRemoved: number[];
 }
 
-export function calculateDiff(beforeCode: string, afterCode: string): DiffMetadata {
-  const change = diffLines(afterCode, beforeCode);
+/**
+ * Updates the provided token with diff information if a path to a diff is provided.
+ */
+export function calculateDiff(token: CodeToken) {
+  if (!token.diff) {
+    return;
+  }
+
+  const diffCode = loadWorkspaceRelativeFile(token.diff);
+  const change = diffLines(token.code, diffCode);
 
   const getLinesRange = (start: number, count: number): number[] =>
     Array.from(Array(count).keys()).map((i) => i + start);
 
   let processedLines = 0;
 
-  return change.reduce(
+  token.diffMetadata = change.reduce(
     (prev: DiffMetadata, part: DiffChange) => {
       const diff: DiffMetadata = {
         code: `${prev.code}${part.value}`,
