@@ -33,6 +33,7 @@ ts_library(
     srcs = [
         "entities.ts",
     ],
+    tsconfig = "@npm//@angular/build-tooling:tsconfig.json",
     visibility = [
         "@npm//@angular/build-tooling/bazel/api-gen/rendering:__pkg__",
         "@npm//@angular/build-tooling/bazel/markdown_to_html/src:__pkg__",
