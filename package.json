@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-390968287fc378d3b46977649c50e2b5a372d4f2",
+  "version": "0.0.0-72101e7801f2b8326c158ca0246dc406aa6584f8",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -96,6 +96,7 @@
     "@types/cli-progress": "^3.9.1",
     "@types/conventional-commits-parser": "^3.0.1",
     "@types/diff": "^5.0.8",
+    "@types/dom-view-transitions": "^1.0.4",
     "@types/ejs": "^3.0.6",
     "@types/events": "^3.0.0",
     "@types/folder-hash": "^4.0.1",
@@ -112,7 +113,9 @@
     "@types/wait-on": "^5.3.1",
     "@types/which": "^3.0.0",
     "@types/yarnpkg__lockfile": "^1.1.5",
+    "@webcontainer/api": "^1.1.8",
     "@yarnpkg/lockfile": "^1.1.0",
+    "algoliasearch": "^4.20.0",
     "chalk": "^5.0.1",
     "cli-progress": "^3.7.0",
     "conventional-commits-parser": "^5.0.0",
@@ -134,6 +137,7 @@
     "jasmine-core": "~5.1.0",
     "jsdom": "^23.0.0",
     "jsonc-parser": "^3.2.0",
+    "jszip": "^3.10.1",
     "karma": "^6.3.15",
     "karma-chrome-launcher": "^3.1.0",
     "karma-coverage": "~2.2.0",
