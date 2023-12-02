@@ -36,7 +36,7 @@ ts_library(
     tsconfig = "@npm//@angular/build-tooling:tsconfig.json",
     visibility = [
         "@npm//@angular/build-tooling/bazel/api-gen/rendering:__pkg__",
-        "@npm//@angular/build-tooling/bazel/markdown_to_html/src:__pkg__",
+        "@npm//@angular/docs/markdown/guides:__pkg__",
     ],
 )
 
