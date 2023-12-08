@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-3bdb358b99b17910167b2d663088b4f1d5d0ca09",
+  "version": "0.0.0-edcf0a3ad1c242f1ba1eabcda95afcffe7d9965c",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -107,6 +107,8 @@
     "@octokit/webhooks-definitions": "3.67.3",
     "@octokit/webhooks-types": "7.3.1",
     "@openid/appauth": "^1.3.1",
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
     "@types/babel__core": "^7.1.19",
     "@types/cli-progress": "^3.9.1",
     "@types/conventional-commits-parser": "^3.0.1",
@@ -171,6 +173,7 @@
     "opener": "^1.5.2",
     "protobufjs": "^7.0.0",
     "requirejs": "^2.3.6",
+    "rollup-plugin-sourcemaps": "^0.6.3",
     "rxjs": "^7.4.0",
     "semver": "^7.5.4",
     "spdx-satisfies": "^5.0.1",
