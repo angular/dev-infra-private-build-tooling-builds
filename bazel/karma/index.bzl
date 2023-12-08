@@ -33,7 +33,7 @@ def karma_web_test_suite(name, **kwargs):
       and a local target to ease debugging."""
 
     # Set up default browsers if no explicit `browsers` have been specified.
-    if not hasattr(kwargs, "browsers"):
+    if "browsers" not in kwargs:
         kwargs["tags"] = ["native"] + kwargs.get("tags", [])
         kwargs["browsers"] = [
             "@npm//@angular/build-tooling/bazel/browsers/chromium:chromium",
