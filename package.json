@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-8e21b74fc90a579cd9bf69953f9384e7d3b1b316",
+  "version": "0.0.0-bdfc7e5f55e5d93eb088d10a76f1d53fb33226d9",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -45,7 +45,7 @@
     "marked-mangle": "^1.1.4",
     "preact": "^10.17.1",
     "preact-render-to-string": "^6.2.1",
-    "prettier": "3.1.1",
+    "prettier": "3.2.2",
     "protractor": "^7.0.0",
     "selenium-webdriver": "4.16.0",
     "send": "^0.18.0",
