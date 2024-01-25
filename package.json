@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-f0fa701114b57b7d633a2ab3813034ab1735e3c0",
+  "version": "0.0.0-10788de8a2999c84bc16a132dfe1a0a9bc934604",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -16,7 +16,7 @@
   },
   "packageManager": "yarn@4.0.2",
   "dependencies": {
-    "@angular-devkit/build-angular": "17.1.0-rc.1",
+    "@angular-devkit/build-angular": "17.2.0-next.0",
     "@angular/benchpress": "0.3.0",
     "@babel/core": "^7.16.0",
     "@babel/helper-annotate-as-pure": "^7.18.6",
@@ -60,20 +60,20 @@
   "devDependencies": {
     "@actions/core": "^1.4.0",
     "@actions/github": "^6.0.0",
-    "@angular/animations": "17.1.0-rc.0",
+    "@angular/animations": "17.2.0-next.0",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
     "@angular/cdk": "17.1.0-rc.0",
-    "@angular/cli": "17.1.0-rc.1",
-    "@angular/common": "17.1.0-rc.0",
-    "@angular/compiler": "17.1.0-rc.0",
-    "@angular/compiler-cli": "17.1.0-rc.0",
-    "@angular/core": "17.1.0-rc.0",
+    "@angular/cli": "17.2.0-next.0",
+    "@angular/common": "17.2.0-next.0",
+    "@angular/compiler": "17.2.0-next.0",
+    "@angular/compiler-cli": "17.2.0-next.0",
+    "@angular/core": "17.2.0-next.0",
     "@angular/fire": "^17.0.0-next",
-    "@angular/forms": "17.1.0-rc.0",
+    "@angular/forms": "17.2.0-next.0",
     "@angular/material": "17.1.0-rc.0",
-    "@angular/platform-browser": "17.1.0-rc.0",
-    "@angular/platform-browser-dynamic": "17.1.0-rc.0",
-    "@angular/router": "17.1.0-rc.0",
+    "@angular/platform-browser": "17.2.0-next.0",
+    "@angular/platform-browser-dynamic": "17.2.0-next.0",
+    "@angular/router": "17.2.0-next.0",
     "@bazel/bazelisk": "^1.11.0",
     "@bazel/ibazel": "^0.23.0",
     "@bazel/jasmine": "patch:@bazel/jasmine@npm:5.8.1#.yarn/patches/@bazel-jasmine-npm.patch",
@@ -196,6 +196,6 @@
     }
   },
   "resolutions": {
-    "@angular/benchpress/@angular/core": "17.1.0-rc.0"
+    "@angular/benchpress/@angular/core": "17.2.0-next.0"
   }
 }
