@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-8d68ae44cf9deba4b3c2f6301298f15670f48926",
+  "version": "0.0.0-862c199cdfd652fb116e5821223b8189edb0f30c",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -170,8 +170,8 @@
     "multimatch": "^7.0.0",
     "nock": "beta",
     "opener": "^1.5.2",
-    "playwright-core": "^1.41.2",
     "protobufjs": "^7.0.0",
+    "puppeteer-core": "^22.6.5",
     "requirejs": "^2.3.6",
     "rollup-plugin-sourcemaps": "^0.6.3",
     "rxjs": "^7.4.0",
