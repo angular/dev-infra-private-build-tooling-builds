@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-08df554c95848d6b13a2d3bdcf17180700948063",
+  "version": "0.0.0-56d0b1f597b9e4b5d99f289f6904a220802164c1",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -63,7 +63,7 @@
     "@angular/animations": "18.0.0-next.6",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
     "@angular/cdk": "18.0.0-next.6",
-    "@angular/cli": "18.0.0-next.3",
+    "@angular/cli": "18.0.0-next.5",
     "@angular/common": "18.0.0-next.6",
     "@angular/compiler": "18.0.0-next.6",
     "@angular/compiler-cli": "18.0.0-next.6",
