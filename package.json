@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-a9d6b07a910be9a39d36b4f35756d22c6c083d29",
+  "version": "0.0.0-6aff1bb8cfd4508eee797f0f5a3af74fc7d25178",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -150,7 +150,7 @@
     "gcip-cloud-functions": "0.2.0",
     "git-raw-commits": "^4.0.0",
     "husky": "^9.0.0",
-    "inquirer": "9.2.19",
+    "inquirer": "9.2.20",
     "jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
     "jsdom": "^24.0.0",
