@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-57d2618060bd2cb79c72411ac306e8406f12814d",
+  "version": "0.0.0-6e8f46db9cb4ab709cb34387fa6e2c76eecd3c7a",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -93,7 +93,7 @@
     "@lezer/common": "^1.1.1",
     "@lezer/highlight": "^1.2.0",
     "@lezer/javascript": "^1.4.9",
-    "@octokit/auth-app": "6.1.1",
+    "@octokit/auth-app": "7.0.0",
     "@octokit/core": "6.1.2",
     "@octokit/graphql": "8.1.1",
     "@octokit/graphql-schema": "patch:@octokit/graphql-schema@npm%3A15.3.0#~/.yarn/patches/@octokit-graphql-schema-npm-15.3.0-4046a59648.patch",
