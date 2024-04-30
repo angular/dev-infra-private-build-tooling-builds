@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-bd79da7676bb090261391254039f4318ae5ee0c3",
+  "version": "0.0.0-57d2618060bd2cb79c72411ac306e8406f12814d",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -38,7 +38,6 @@
     "@types/ws": "8.5.10",
     "@types/yargs": "^17.0.0",
     "browser-sync": "^3.0.0",
-    "clang-format": "1.8.0",
     "highlight.js": "^11.8.0",
     "html-entities": "^2.4.0",
     "marked": "^12.0.0",
