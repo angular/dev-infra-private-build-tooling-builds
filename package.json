@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-96dcea7b9071beee41544a83e9876312aacfa20a",
+  "version": "0.0.0-ba8a5f8089795179c257dc94f2d4e823f9307156",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -185,8 +185,6 @@
     "wait-on": "^7.0.0",
     "which": "^4.0.0",
     "ws": "^8.8.0",
-    "xterm": "^5.3.0",
-    "xterm-addon-fit": "^0.8.0",
     "yaml": "^2.0.0",
     "zone.js": "^0.14.0"
   },
