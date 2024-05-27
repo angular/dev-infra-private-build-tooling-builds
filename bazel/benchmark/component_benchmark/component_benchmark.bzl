@@ -2,7 +2,7 @@ load("@npm//@angular/build-tooling/bazel/app-bundling:index.bzl", "app_bundle")
 load("@npm//@angular/build-tooling/bazel/http-server:index.bzl", "http_server")
 load("@npm//@angular/build-tooling/bazel:expand_template.bzl", "expand_template")
 load("@npm//@angular/bazel:index.bzl", "ng_module")
-load("@npm//@bazel/concatjs:index.bzl", "ts_library")
+load("@npm//@angular/build-tooling/bazel:defaults.bzl", "ts_library")
 load(":benchmark_test.bzl", "benchmark_test")
 
 def copy_default_index_html(output_name, bundle_target_name):
