@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-7a4adc6391e3df3bffb97140b863628515dc9fc2",
+  "version": "0.0.0-8830438ba7c867e7ed15ce76612a969bdf1bd3a8",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -54,7 +54,7 @@
     "true-case-path": "^2.2.1",
     "tslib": "^2.5.2",
     "typescript": "5.4.5",
-    "uuid": "^9.0.0",
+    "uuid": "^10.0.0",
     "yargs": "^17.0.0"
   },
   "devDependencies": {
