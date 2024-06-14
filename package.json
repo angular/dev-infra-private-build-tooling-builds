@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-80148265d4eb7d712df1b20e8924eea39ed6a94f",
+  "version": "0.0.0-7f7409119b097224be2face96d2e16c6f0fab3d3",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -41,7 +41,7 @@
     "browser-sync": "^3.0.0",
     "highlight.js": "^11.8.0",
     "html-entities": "^2.4.0",
-    "marked": "^13.0.0",
+    "marked": "^12.0.0",
     "marked-mangle": "^1.1.4",
     "preact": "^10.17.1",
     "preact-render-to-string": "^6.2.1",
