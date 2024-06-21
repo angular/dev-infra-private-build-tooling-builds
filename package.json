@@ -1,12 +1,12 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-0a85000993f30b7bd91b93774445ed99842cbe20",
+  "version": "0.0.0-0a1eaa1275b1aee916280b9d99d663beb534dca7",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
     "lint": "yarn tslint -c tslint.json --project tsconfig.json",
-    "build-env-stamp": "ts-node --transpile-only --esm --project tsconfig.json ./ng-dev/release/stamping/_private_main.ts build-env-stamp",
-    "update-generated-files": "ts-node --transpile-only --esm --project tsconfig.json ./tools/update-generated-files.ts",
+    "build-env-stamp": "tsx --tsconfig tsconfig.json ./ng-dev/release/stamping/_private_main.ts build-env-stamp",
+    "update-generated-files": "tsx --tsconfig tsconfig.json ./tools/update-generated-files.ts",
     "pack": "bazel run //:npm_package.pack --config=release"
   },
   "exports": {
@@ -17,7 +17,7 @@
   "packageManager": "yarn@4.3.1",
   "dependencies": {
     "@angular/benchpress": "0.3.0",
-    "@angular/build": "18.1.0-next.2",
+    "@angular/build": "18.1.0-next.3",
     "@babel/core": "^7.16.0",
     "@babel/helper-annotate-as-pure": "^7.18.6",
     "@babel/plugin-proposal-async-generator-functions": "^7.20.1",
@@ -53,6 +53,7 @@
     "tmp": "^0.2.1",
     "true-case-path": "^2.2.1",
     "tslib": "^2.5.2",
+    "tsx": "^4.15.7",
     "typescript": "5.4.5",
     "uuid": "^10.0.0",
     "yargs": "^17.0.0"
@@ -60,20 +61,20 @@
   "devDependencies": {
     "@actions/core": "^1.4.0",
     "@actions/github": "^6.0.0",
-    "@angular/animations": "18.1.0-next.2",
+    "@angular/animations": "18.1.0-next.3",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
     "@angular/cdk": "18.1.0-next.3",
-    "@angular/cli": "18.1.0-next.2",
-    "@angular/common": "18.1.0-next.2",
-    "@angular/compiler": "18.1.0-next.2",
-    "@angular/compiler-cli": "18.1.0-next.2",
-    "@angular/core": "18.1.0-next.2",
+    "@angular/cli": "18.1.0-next.3",
+    "@angular/common": "18.1.0-next.3",
+    "@angular/compiler": "18.1.0-next.3",
+    "@angular/compiler-cli": "18.1.0-next.3",
+    "@angular/core": "18.1.0-next.3",
     "@angular/fire": "^18.0.0-rc",
-    "@angular/forms": "18.1.0-next.2",
+    "@angular/forms": "18.1.0-next.3",
     "@angular/material": "18.1.0-next.3",
-    "@angular/platform-browser": "18.1.0-next.2",
-    "@angular/platform-browser-dynamic": "18.1.0-next.2",
-    "@angular/router": "18.1.0-next.2",
+    "@angular/platform-browser": "18.1.0-next.3",
+    "@angular/platform-browser-dynamic": "18.1.0-next.3",
+    "@angular/router": "18.1.0-next.3",
     "@bazel/bazelisk": "^1.11.0",
     "@bazel/ibazel": "^0.23.0",
     "@bazel/jasmine": "patch:@bazel/jasmine@npm:5.8.1#.yarn/patches/@bazel-jasmine-npm.patch",
@@ -180,7 +181,7 @@
     "stylelint": "^16.0.0",
     "supports-color": "9.4.0",
     "terser": "5.31.1",
-    "ts-node": "^10.8.1",
+    "ts-node": "^10.9.2",
     "tslint": "^6.1.3",
     "typed-graphqlify": "^3.1.1",
     "wait-on": "^7.0.0",
@@ -195,6 +196,6 @@
     }
   },
   "resolutions": {
-    "@angular/benchpress/@angular/core": "18.1.0-next.2"
+    "@angular/benchpress/@angular/core": "18.1.0-next.3"
   }
 }
