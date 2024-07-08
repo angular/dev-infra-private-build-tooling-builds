@@ -129,7 +129,7 @@ export function setEntryFlags<T extends HasJsDocTags & HasModuleName>(
 function getHtmlAdditionalLinks<T extends HasJsDocTags & HasModuleName>(
   entry: T,
 ): LinkEntryRenderable[] {
-  const markdownLinkRule = /\[([^\]]+)\]\(([^)]+)\)/;
+  const markdownLinkRule = /\[(.*?)\]\((.*?)(?: "(.*?)")?\)/;
 
   const seeAlsoLinks = entry.jsdocTags
     .filter((tag) => tag.name === JS_DOC_SEE_TAG)
@@ -141,6 +141,7 @@ function getHtmlAdditionalLinks<T extends HasJsDocTags & HasModuleName>(
         return {
           label: markdownLinkMatch[1],
           url: markdownLinkMatch[2],
+          title: markdownLinkMatch[3],
         };
       }
 
@@ -192,7 +193,14 @@ function convertJsDocExampleToHtmlExample(text: string): string {
 }
 
 function convertLinks(text: string, entry: HasModuleName) {
-  return text.replace(jsDoclinkRegex, (_, symbol) => {
-    return `<a href="${getLinkToModule(entry.moduleName)}/${symbol}"><code>${symbol}</code></a>`;
+  return text.replace(jsDoclinkRegex, (_, link) => {
+    const [symbol, description] = link.split(/\s(.+)/);
+    if (symbol && description) {
+      // {@link Route Some route with description}
+      return `<a href="${getLinkToModule(entry.moduleName)}/${symbol}"><code>${description}</code></a>`;
+    } else {
+      // {@link Route}
+      return `<a href="${getLinkToModule(entry.moduleName)}/${symbol}"><code>${symbol}</code></a>`;
+    }
   });
 }
