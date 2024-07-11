@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-fc5ef0f362c3b0373a012b58ae1bde6def471c27",
+  "version": "0.0.0-47ebdf399433abefafe459b3c51795dd8c6ab220",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -141,6 +141,7 @@
     "ejs": "^3.1.6",
     "emoji-regex": "^10.3.0",
     "fast-glob": "^3.3.2",
+    "fflate": "^0.8.2",
     "firebase": "10.12.2",
     "firebase-admin": "12.2.0",
     "firebase-functions": "^5.0.0",
@@ -155,7 +156,6 @@
     "jasmine-core": "~5.1.0",
     "jsdom": "^24.0.0",
     "jsonc-parser": "^3.2.0",
-    "jszip": "^3.10.1",
     "karma": "^6.3.15",
     "karma-chrome-launcher": "^3.1.0",
     "karma-coverage": "~2.2.0",
