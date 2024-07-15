@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-42a263ebb63af9cdeae5e661acf379a5f1332a25",
+  "version": "0.0.0-a19224fb46382a7b34bd3cd8f82ec12fd69011e6",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -102,7 +102,7 @@
     "@octokit/openapi-types": "22.2.0",
     "@octokit/plugin-paginate-rest": "11.3.3",
     "@octokit/plugin-rest-endpoint-methods": "13.2.4",
-    "@octokit/request-error": "6.1.1",
+    "@octokit/request-error": "6.1.4",
     "@octokit/rest": "21.0.0",
     "@octokit/types": "13.5.0",
     "@octokit/webhooks-definitions": "3.67.3",
