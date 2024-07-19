@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-3b9536b799d033fe6ab4437131c81c10c7bdd101",
+  "version": "0.0.0-479670883ad54a9728127c55fc993301e65246a7",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -49,6 +49,7 @@
     "protractor": "^7.0.0",
     "selenium-webdriver": "^4.18.1",
     "send": "^0.18.0",
+    "shiki": "^1.10.3",
     "source-map": "^0.7.4",
     "tmp": "^0.2.1",
     "true-case-path": "^2.2.1",
