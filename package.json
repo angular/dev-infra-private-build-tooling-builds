@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-d4c4885863e9786a4d1cde5b7b7734eb526e3931",
+  "version": "0.0.0-d30a56c19bafaac67cf44e605ed8c2c0e45b0a51",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -39,7 +39,6 @@
     "@types/ws": "8.5.10",
     "@types/yargs": "^17.0.0",
     "browser-sync": "^3.0.0",
-    "highlight.js": "^11.8.0",
     "html-entities": "^2.4.0",
     "marked": "^12.0.0",
     "marked-mangle": "^1.1.4",
@@ -49,7 +48,7 @@
     "protractor": "^7.0.0",
     "selenium-webdriver": "^4.18.1",
     "send": "^0.18.0",
-    "shiki": "^1.10.3",
+    "shiki": "^1.11.0",
     "source-map": "^0.7.4",
     "tmp": "^0.2.1",
     "true-case-path": "^2.2.1",
