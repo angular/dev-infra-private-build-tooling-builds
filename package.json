@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-d30a56c19bafaac67cf44e605ed8c2c0e45b0a51",
+  "version": "0.0.0-d3cb53bf6c1291032fc58406e3ce92555d2b16cd",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -92,6 +92,8 @@
     "@codemirror/view": "^6.22.1",
     "@google-cloud/firestore": "^7.0.0",
     "@google-cloud/storage": "^7.0.0",
+    "@inquirer/prompts": "^5.2.0",
+    "@inquirer/type": "^1.5.0",
     "@lezer/common": "^1.1.1",
     "@lezer/highlight": "^1.2.0",
     "@lezer/javascript": "^1.4.9",
@@ -151,7 +153,7 @@
     "gcip-cloud-functions": "0.2.0",
     "git-raw-commits": "^4.0.0",
     "husky": "^9.0.0",
-    "inquirer": "10.0.0",
+    "inquirer": "10.0.3",
     "jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
     "jsdom": "^24.0.0",
