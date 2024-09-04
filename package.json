@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-28b2b28028bd8d16474de7c1bea46d2bb3bef4a1",
+  "version": "0.0.0-d79536f63fc8145d15ae0fadab2e580282121c3c",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -118,7 +118,7 @@
     "chalk": "^5.0.1",
     "cli-progress": "^3.7.0",
     "conventional-commits-parser": "^5.0.0",
-    "diff": "^5.1.0",
+    "diff": "^6.0.0",
     "ejs": "^3.1.6",
     "fast-glob": "^3.3.2",
     "firebase": "10.13.1",
