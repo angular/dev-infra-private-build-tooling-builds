@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-0115499ffe620a539f64da2bfee7c8ecc9b06df5",
+  "version": "0.0.0-18033eeb81c00d6867f980105fa503721ada7aa3",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -160,6 +160,7 @@
     "tslint": "^6.1.3",
     "tsx": "^4.15.7",
     "typed-graphqlify": "^3.1.1",
+    "undici": "^6.19.8",
     "wait-on": "^8.0.0",
     "which": "^4.0.0",
     "ws": "^8.8.0",
