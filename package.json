@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-99bacdfabf7ad08967b1bbbfaf18f0d8fc29fe80",
+  "version": "0.0.0-68ba97a7986844027156792f2b61b14f2212ad8e",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -55,20 +55,20 @@
   "devDependencies": {
     "@actions/core": "^1.4.0",
     "@actions/github": "^6.0.0",
-    "@angular/animations": "19.0.0-next.3",
+    "@angular/animations": "19.0.0-next.4",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
     "@angular/cdk": "19.0.0-next.3",
     "@angular/cli": "19.0.0-next.3",
-    "@angular/common": "19.0.0-next.3",
-    "@angular/compiler": "19.0.0-next.3",
-    "@angular/compiler-cli": "19.0.0-next.3",
-    "@angular/core": "19.0.0-next.3",
+    "@angular/common": "19.0.0-next.4",
+    "@angular/compiler": "19.0.0-next.4",
+    "@angular/compiler-cli": "19.0.0-next.4",
+    "@angular/core": "19.0.0-next.4",
     "@angular/fire": "^18.0.0-rc",
-    "@angular/forms": "19.0.0-next.3",
+    "@angular/forms": "19.0.0-next.4",
     "@angular/material": "19.0.0-next.3",
-    "@angular/platform-browser": "19.0.0-next.3",
-    "@angular/platform-browser-dynamic": "19.0.0-next.3",
-    "@angular/router": "19.0.0-next.3",
+    "@angular/platform-browser": "19.0.0-next.4",
+    "@angular/platform-browser-dynamic": "19.0.0-next.4",
+    "@angular/router": "19.0.0-next.4",
     "@bazel/bazelisk": "^1.11.0",
     "@bazel/ibazel": "^0.23.0",
     "@bazel/jasmine": "patch:@bazel/jasmine@npm:5.8.1#.yarn/patches/@bazel-jasmine-npm.patch",
@@ -173,6 +173,6 @@
     }
   },
   "resolutions": {
-    "@angular/benchpress/@angular/core": "19.0.0-next.3"
+    "@angular/benchpress/@angular/core": "19.0.0-next.4"
   }
 }
