@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-68ba97a7986844027156792f2b61b14f2212ad8e",
+  "version": "0.0.0-23b527f0ae14516503a0a034c4e1349fb6da47de",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -48,7 +48,7 @@
     "tmp": "^0.2.1",
     "true-case-path": "^2.2.1",
     "tslib": "^2.5.2",
-    "typescript": "5.5.4",
+    "typescript": "5.6.2",
     "uuid": "^10.0.0",
     "yargs": "^17.0.0"
   },
@@ -130,8 +130,8 @@
     "gcip-cloud-functions": "0.2.0",
     "git-raw-commits": "^4.0.0",
     "husky": "^9.0.0",
-    "jasmine": "~5.2.0",
-    "jasmine-core": "~5.2.0",
+    "jasmine": "~5.3.0",
+    "jasmine-core": "~5.3.0",
     "jsdom": "^25.0.0",
     "jsonc-parser": "^3.2.0",
     "karma": "^6.3.15",
@@ -155,7 +155,7 @@
     "spdx-satisfies": "^5.0.1",
     "stylelint": "^16.0.0",
     "supports-color": "9.4.0",
-    "terser": "5.31.6",
+    "terser": "5.32.0",
     "ts-node": "^10.9.2",
     "tslint": "^6.1.3",
     "tsx": "^4.15.7",
