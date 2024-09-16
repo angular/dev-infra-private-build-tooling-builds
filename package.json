@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-d73c31dd25aa10d72b8cb520f1b6f5df5a6ed69d",
+  "version": "0.0.0-b5637530773da44c3ad2d08e6023980f96c1079f",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -74,7 +74,7 @@
     "@bazel/jasmine": "patch:@bazel/jasmine@npm:5.8.1#.yarn/patches/@bazel-jasmine-npm.patch",
     "@google-cloud/firestore": "^7.0.0",
     "@google-cloud/storage": "^7.0.0",
-    "@inquirer/prompts": "^5.2.0",
+    "@inquirer/prompts": "^6.0.0",
     "@inquirer/type": "^1.5.0",
     "@lezer/common": "^1.1.1",
     "@lezer/highlight": "^1.2.0",
