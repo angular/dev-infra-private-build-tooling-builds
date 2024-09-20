@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-e72d5fd4f885737b77944ac0a6356b85861f8bd3",
+  "version": "0.0.0-5b6bd6567a35f60f8705021ce20cbd56abd10401",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -57,7 +57,7 @@
     "@actions/github": "^6.0.0",
     "@angular/animations": "19.0.0-next.6",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
-    "@angular/cdk": "19.0.0-next.4",
+    "@angular/cdk": "19.0.0-next.5",
     "@angular/cli": "19.0.0-next.7",
     "@angular/common": "19.0.0-next.6",
     "@angular/compiler": "19.0.0-next.6",
@@ -65,7 +65,7 @@
     "@angular/core": "19.0.0-next.6",
     "@angular/fire": "^18.0.0-rc",
     "@angular/forms": "19.0.0-next.6",
-    "@angular/material": "19.0.0-next.4",
+    "@angular/material": "19.0.0-next.5",
     "@angular/platform-browser": "19.0.0-next.6",
     "@angular/platform-browser-dynamic": "19.0.0-next.6",
     "@angular/router": "19.0.0-next.6",
