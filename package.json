@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-37d6ab618e98067d6a9c73ddbca79beb5e15a6f5",
+  "version": "0.0.0-1ccc8a08f0521e59bb98eb15111b2494c4e6fe03",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -28,7 +28,7 @@
     "@bazel/runfiles": "5.8.1",
     "@bazel/terser": "5.8.1",
     "@bazel/typescript": "5.8.1",
-    "@microsoft/api-extractor": "7.47.9",
+    "@microsoft/api-extractor": "7.47.10",
     "@types/browser-sync": "^2.26.3",
     "@types/minimatch": "^5.1.2",
     "@types/node": "^18.19.21",
@@ -130,8 +130,8 @@
     "gcip-cloud-functions": "0.2.0",
     "git-raw-commits": "^4.0.0",
     "husky": "^9.0.0",
-    "jasmine": "~5.3.0",
-    "jasmine-core": "~5.3.0",
+    "jasmine": "~5.4.0",
+    "jasmine-core": "~5.4.0",
     "jsdom": "^25.0.0",
     "jsonc-parser": "^3.2.0",
     "karma": "^6.3.15",
