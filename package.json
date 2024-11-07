@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-082dd8ee781c920bfe5fa75065af6ab5a1b2fba9",
+  "version": "0.0.0-a5da51e579ab934a1bcf75f4821f652c6646d72d",
   "private": true,
   "scripts": {
     "prepare": "husky",
