@@ -1,9 +1,8 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-a5da51e579ab934a1bcf75f4821f652c6646d72d",
+  "version": "0.0.0-64ae2d1ab6e7c22c2cd4ecda00ec276075eea01c",
   "private": true,
   "scripts": {
-    "prepare": "husky",
     "ng-dev": "bash ./tools/local-dev.sh",
     "lint": "yarn tslint -c tslint.json --project tsconfig.json",
     "build-env-stamp": "tsx --tsconfig tsconfig.json ./ng-dev/release/stamping/_private_main.ts build-env-stamp",
