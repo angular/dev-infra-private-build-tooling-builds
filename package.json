@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-55a4733f5d4f8bb8d573267603914ba8e4609c32",
+  "version": "0.0.0-c5c59407a8200e5cc90dfb4bc185fd0eaeb65497",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -92,7 +92,7 @@
     "@types/babel__core": "^7.1.19",
     "@types/cli-progress": "^3.9.1",
     "@types/conventional-commits-parser": "^5.0.0",
-    "@types/diff": "^6.0.0",
+    "@types/diff": "^7.0.0",
     "@types/dom-view-transitions": "^1.0.4",
     "@types/ejs": "^3.0.6",
     "@types/events": "^3.0.0",
