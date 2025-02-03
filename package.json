@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-de990cad1ed5a56384f4b29f90a3096ddad79b31",
+  "version": "0.0.0-a34cf151f4b4b2600e5a2328e14f31ba3d9c5eb4",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -27,7 +27,7 @@
     "@bazel/runfiles": "5.8.1",
     "@bazel/terser": "5.8.1",
     "@bazel/typescript": "5.8.1",
-    "@microsoft/api-extractor": "7.49.1",
+    "@microsoft/api-extractor": "7.49.2",
     "@types/browser-sync": "^2.26.3",
     "@types/minimatch": "^5.1.2",
     "@types/node": "^18.19.21",
