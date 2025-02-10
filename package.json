@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-362e8069f5adddb9186e66e5756c812eedc60375",
+  "version": "0.0.0-fbe784287f6a3e4237ba736516ec588de819aebf",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -102,7 +102,7 @@
     "@types/jsdom": "^21.0.0",
     "@types/opener": "^1.4.0",
     "@types/semver": "^7.3.6",
-    "@types/supports-color": "^8.1.1",
+    "@types/supports-color": "^10.0.0",
     "@types/wait-on": "^5.3.1",
     "@types/which": "^3.0.0",
     "@types/yarnpkg__lockfile": "^1.1.5",
