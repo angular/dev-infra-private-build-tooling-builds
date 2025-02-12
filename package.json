@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-8a438a3bdc519880d78b5ac92b62bfe688deb058",
+  "version": "0.0.0-24b8cdcad6e528ed5c8f6f033cbd0208a8a456f2",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -27,7 +27,7 @@
     "@bazel/runfiles": "5.8.1",
     "@bazel/terser": "5.8.1",
     "@bazel/typescript": "5.8.1",
-    "@microsoft/api-extractor": "7.49.2",
+    "@microsoft/api-extractor": "7.50.0",
     "@types/browser-sync": "^2.26.3",
     "@types/minimatch": "^5.1.2",
     "@types/node": "^18.19.21",
@@ -113,7 +113,7 @@
     "diff": "^7.0.0",
     "ejs": "^3.1.6",
     "fast-glob": "^3.3.2",
-    "firebase": "11.3.0",
+    "firebase": "11.3.1",
     "firebase-admin": "13.1.0",
     "firebase-functions": "^6.0.0",
     "firebase-tools": "^13.0.0",
