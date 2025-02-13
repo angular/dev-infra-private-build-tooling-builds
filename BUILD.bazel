@@ -1,3 +1,7 @@
+load("@aspect_rules_ts//ts:defs.bzl", rules_js_tsconfig = "ts_config")
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
+load("@npm//@bazel/typescript:index.bzl", "ts_config")
+
 
 
 exports_files(["tsconfig.json"])
