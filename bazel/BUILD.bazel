@@ -33,6 +33,7 @@ filegroup(
         "@npm//@angular/build-tooling/bazel/private:files",
         "@npm//@angular/build-tooling/bazel/remote-execution:files",
         "@npm//@angular/build-tooling/bazel/spec-bundling:files",
+        "@npm//@angular/build-tooling/bazel/ts_project:files",
     ],
     visibility = ["//:npm"],
 )
