@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-aaaca8deb7837812b1ec17b36446e4142e0ddffd",
+  "version": "0.0.0-90229c83def51ffb89735157c4b44637a07846a6",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -30,7 +30,7 @@
     "@microsoft/api-extractor": "7.51.0",
     "@types/browser-sync": "^2.26.3",
     "@types/minimatch": "^5.1.2",
-    "@types/node": "^18.19.21",
+    "@types/node": "^20.14.8",
     "@types/selenium-webdriver": "^4.1.21",
     "@types/send": "^0.17.1",
     "@types/tmp": "^0.2.1",
