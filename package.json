@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-33d23b9b4bff48e283f0fc97e901c3374c397cc7",
+  "version": "0.0.0-27078026111b01a7202449e9788ce38f2b2e103f",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -78,12 +78,12 @@
     "@octokit/core": "6.1.4",
     "@octokit/graphql": "8.2.1",
     "@octokit/graphql-schema": "patch:@octokit/graphql-schema@npm%3A15.3.0#~/.yarn/patches/@octokit-graphql-schema-npm-15.3.0-4046a59648.patch",
-    "@octokit/openapi-types": "24.0.0",
+    "@octokit/openapi-types": "24.1.0",
     "@octokit/plugin-paginate-rest": "11.4.3",
     "@octokit/plugin-rest-endpoint-methods": "13.3.1",
     "@octokit/request-error": "6.1.7",
     "@octokit/rest": "21.1.1",
-    "@octokit/types": "13.8.0",
+    "@octokit/types": "13.8.1",
     "@octokit/webhooks-definitions": "3.67.3",
     "@octokit/webhooks-types": "7.6.1",
     "@openid/appauth": "^1.3.1",
