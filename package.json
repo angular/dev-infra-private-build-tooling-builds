@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-68b9c44f43c27f310ba624a63ba06a07a01b347e",
+  "version": "0.0.0-fa1ea81963a17da4e5cb1427fabe73a928746121",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -70,7 +70,7 @@
     "@bazel/ibazel": "^0.23.0",
     "@bazel/jasmine": "patch:@bazel/jasmine@npm:5.8.1#.yarn/patches/@bazel-jasmine-npm.patch",
     "@google-cloud/firestore": "^7.0.0",
-    "@google-cloud/spanner": "7.19.0",
+    "@google-cloud/spanner": "7.19.1",
     "@google-cloud/storage": "^7.0.0",
     "@inquirer/prompts": "^7.0.0",
     "@inquirer/type": "^3.0.0",
@@ -114,7 +114,7 @@
     "diff": "^7.0.0",
     "ejs": "^3.1.6",
     "fast-glob": "^3.3.2",
-    "firebase": "11.4.0",
+    "firebase": "11.5.0",
     "firebase-admin": "13.2.0",
     "firebase-functions": "^6.0.0",
     "firebase-tools": "^13.0.0",
