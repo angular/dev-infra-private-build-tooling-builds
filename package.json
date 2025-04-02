@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-a74100544e1e46cb2841f1d120d84cedc73559f4",
+  "version": "0.0.0-e4d4954c1056fca66831004507d25ba352b68199",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -139,7 +139,6 @@
     "multimatch": "^7.0.0",
     "nock": "14.0.2",
     "opener": "^1.5.2",
-    "protobufjs": "^7.0.0",
     "requirejs": "^2.3.6",
     "rxjs": "^7.4.0",
     "semver": "^7.5.4",
