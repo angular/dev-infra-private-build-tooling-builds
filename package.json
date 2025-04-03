@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-daae901d8ac1f6d3c050d83d7181a67b01b6b02f",
+  "version": "0.0.0-6127cf117a8ed42945a7d8c09bc225851d58ef94",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -74,7 +74,7 @@
     "@google-cloud/storage": "^7.0.0",
     "@inquirer/prompts": "^7.0.0",
     "@inquirer/type": "^3.0.0",
-    "@octokit/auth-app": "7.1.5",
+    "@octokit/auth-app": "7.2.0",
     "@octokit/core": "6.1.4",
     "@octokit/graphql": "8.2.1",
     "@octokit/graphql-schema": "patch:@octokit/graphql-schema@npm%3A15.3.0#~/.yarn/patches/@octokit-graphql-schema-npm-15.3.0-4046a59648.patch",
