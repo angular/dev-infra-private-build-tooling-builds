@@ -20,6 +20,7 @@ ts_project(
     deps = [
         "@npm//@angular/build-tooling/bazel:node_modules/@microsoft/api-extractor",
         "@npm//@angular/build-tooling/bazel:node_modules/@types/node",
+        "@npm//@angular/build-tooling/bazel:node_modules/piscina",
         "@npm//@angular/build-tooling/bazel:node_modules/typescript",
     ],
 )
