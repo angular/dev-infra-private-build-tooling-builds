@@ -7,7 +7,6 @@ ts_config(
     name = "tsconfig",
     src = "tsconfig.json",
     visibility = ["@npm//@angular/build-tooling/bazel:__subpackages__"],
-    deps = ["//:rjs-tsconfig"],
 )
 
 filegroup(
@@ -27,7 +26,6 @@ filegroup(
         "@npm//@angular/build-tooling/bazel/esbuild:files",
         "@npm//@angular/build-tooling/bazel/git-toolchain:files",
         "@npm//@angular/build-tooling/bazel/http-server:files",
-        "@npm//@angular/build-tooling/bazel/integration:files",
         "@npm//@angular/build-tooling/bazel/karma:files",
         "@npm//@angular/build-tooling/bazel/map-size-tracking:files",
         "@npm//@angular/build-tooling/bazel/private:files",
