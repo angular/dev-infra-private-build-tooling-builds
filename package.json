@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-43588389bd7d5f3b893ee43dbedbb6ad3eebdff8",
+  "version": "0.0.0-406fa44140d4e3e2cc508597f8800a5b37d8e009",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -24,7 +24,7 @@
     "@bazel/concatjs": "5.8.1",
     "@bazel/esbuild": "5.8.1",
     "@bazel/protractor": "5.8.1",
-    "@bazel/runfiles": "5.8.1",
+    "@bazel/runfiles": "6.3.1",
     "@bazel/terser": "5.8.1",
     "@bazel/typescript": "5.8.1",
     "@microsoft/api-extractor": "7.52.7",
