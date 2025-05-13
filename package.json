@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-1685f0afc967fb7de4b46ccb22f22d779ee3086c",
+  "version": "0.0.0-df803e568a81c7def0e86fa52ecbc3e401c9d120",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -17,7 +17,7 @@
   "packageManager": "yarn@4.9.1",
   "dependencies": {
     "@angular/benchpress": "0.3.0",
-    "@angular/build": "20.0.0-next.9",
+    "@angular/build": "20.0.0-rc.0",
     "@babel/core": "^7.16.0",
     "@babel/plugin-transform-async-generator-functions": "^7.26.8",
     "@bazel/buildifier": "6.4.0",
@@ -51,20 +51,20 @@
   "devDependencies": {
     "@actions/core": "^1.4.0",
     "@actions/github": "^6.0.0",
-    "@angular/animations": "20.0.0-next.9",
+    "@angular/animations": "20.0.0-rc.0",
     "@angular/bazel": "patch:@angular/bazel@npm:14.1.0-next.2#.yarn/patches/@angular-bazel-npm.patch",
-    "@angular/cdk": "20.0.0-next.10",
-    "@angular/cli": "20.0.0-next.9",
-    "@angular/common": "20.0.0-next.9",
-    "@angular/compiler": "20.0.0-next.9",
-    "@angular/compiler-cli": "20.0.0-next.9",
-    "@angular/core": "20.0.0-next.9",
+    "@angular/cdk": "20.0.0-rc.0",
+    "@angular/cli": "20.0.0-rc.0",
+    "@angular/common": "20.0.0-rc.0",
+    "@angular/compiler": "20.0.0-rc.0",
+    "@angular/compiler-cli": "20.0.0-rc.0",
+    "@angular/core": "20.0.0-rc.0",
     "@angular/fire": "^19.0.0-rc",
-    "@angular/forms": "20.0.0-next.9",
-    "@angular/material": "20.0.0-next.10",
-    "@angular/platform-browser": "20.0.0-next.9",
-    "@angular/platform-browser-dynamic": "20.0.0-next.9",
-    "@angular/router": "20.0.0-next.9",
+    "@angular/forms": "20.0.0-rc.0",
+    "@angular/material": "20.0.0-rc.0",
+    "@angular/platform-browser": "20.0.0-rc.0",
+    "@angular/platform-browser-dynamic": "20.0.0-rc.0",
+    "@angular/router": "20.0.0-rc.0",
     "@bazel/bazelisk": "^1.11.0",
     "@bazel/ibazel": "^0.25.0",
     "@bazel/jasmine": "patch:@bazel/jasmine@npm:5.8.1#.yarn/patches/@bazel-jasmine-npm.patch",
@@ -158,6 +158,6 @@
     }
   },
   "resolutions": {
-    "@angular/benchpress/@angular/core": "20.0.0-next.9"
+    "@angular/benchpress/@angular/core": "20.0.0-rc.0"
   }
 }
