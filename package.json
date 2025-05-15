@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-2bfc54bf9e1d7cfe1e851b7921b47c1eef92b559",
+  "version": "0.0.0-acb6b09a83be61873c6aa248d58345d51b87ac86",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -110,7 +110,7 @@
     "conventional-commits-parser": "^5.0.0",
     "ejs": "^3.1.6",
     "fast-glob": "^3.3.2",
-    "firebase": "11.7.1",
+    "firebase": "11.7.3",
     "firebase-admin": "13.4.0",
     "firebase-functions": "^6.0.0",
     "firebase-tools": "^14.0.0",
