@@ -1,4 +1,3 @@
-load("@aspect_rules_js//js:providers.bzl", "JsInfo")
 load("@build_bazel_rules_nodejs//:providers.bzl", "JSNamedModuleInfo")
 
 def _get_workspace_name(ctx):
@@ -30,8 +29,6 @@ def _http_server_rule_impl(ctx):
     for dep in ctx.attr.deps:
         if JSNamedModuleInfo in dep:
             transitive_depsets.append(dep[JSNamedModuleInfo].sources)
-        if JsInfo in dep:
-            transitive_depsets.append(dep[JsInfo].transitive_sources)
         elif DefaultInfo in dep:
             transitive_depsets.append(dep[DefaultInfo].files)
 
@@ -139,7 +136,6 @@ http_server_rule = rule(
         "_bash_runfile_helpers": attr.label(default = Label("@bazel_tools//tools/bash/runfiles")),
         "_server_bin": attr.label(
             default = Label("@npm//@angular/build-tooling/bazel/http-server:server_bin"),
-            cfg = "exec",
         ),
         "_launcher_template": attr.label(
             allow_single_file = True,

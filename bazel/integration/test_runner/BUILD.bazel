@@ -2,34 +2,23 @@ load("@npm//@angular/build-tooling/bazel:defaults.bzl", "ts_library")
 
 package(default_visibility = ["//visibility:public"])
 
-exports_files([
-    "index.ts",
-    "index_npm_packages.ts",
-])
-
 ts_library(
-    name = "api-golden",
-    srcs = [
-        "find_entry_points.ts",
-        "index.ts",
-        "index_npm_packages.ts",
-        "module_mappings.ts",
-        "patch-host.ts",
-        "path-normalize.ts",
-        "test_api_report.ts",
-    ],
+    name = "test_runner",
+    srcs = glob(["*.ts"]),
+    module_name = "@angular/build-tooling/bazel/integration/test_runner",
     # A tsconfig needs to be specified as otherwise `ts_library` will look for the config
     # in `//:package.json` and this breaks when the BUILD file is copied to `@npm//`.
     tsconfig = "@npm//@angular/build-tooling:tsconfig.json",
     deps = [
         "@npm//@bazel/runfiles",
-        "@npm//@microsoft/api-extractor",
         "@npm//@types/node",
-        "@npm//typescript",
+        "@npm//@types/tmp",
+        "@npm//tmp",
+        "@npm//true-case-path",
     ],
 )
 
-# Expose the sources in the dev-infra NPM package.
+# Make source files available for distribution via pkg_npm
 filegroup(
     name = "files",
     srcs = glob(["*"]),

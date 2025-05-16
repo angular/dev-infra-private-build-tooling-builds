@@ -1,5 +1,5 @@
-load(":alias.bzl", "git_toolchain_alias")
 load(":toolchain.bzl", "git_toolchain")
+load(":alias.bzl", "git_toolchain_alias")
 
 package(default_visibility = ["//visibility:public"])
 
@@ -77,11 +77,10 @@ toolchain(
 
 toolchain(
     name = "git_windows_toolchain",
-    # TODO(devversion): Consult with Bazel team on best practices.
-    # Toolchain selection isn't able to cross-compile if we require Windows
-    # also as execution platform. This shouldn't be necessary because the toolchain
-    # is only used for target platform execution (not to be confused with Bazel execution).
-    # exec_compatible_with = [],
+    exec_compatible_with = [
+        "@platforms//os:windows",
+        "@platforms//cpu:x86_64",
+    ],
     target_compatible_with = [
         "@platforms//os:windows",
         "@platforms//cpu:x86_64",

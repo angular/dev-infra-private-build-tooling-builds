@@ -1,4 +1,3 @@
-load("@aspect_rules_js//js:providers.bzl", "JsInfo", "js_info")
 load("@rules_nodejs//nodejs:providers.bzl", "JSModuleInfo")
 
 def _is_non_external_file_with_suffix(file, suffix):
@@ -38,25 +37,21 @@ def _create_entrypoint_file(base_package, spec_files, bootstrap_files):
 
 def _spec_entrypoint_impl(ctx):
     output = ctx.actions.declare_file("%s.mjs" % ctx.attr.name)
+    spec_direct_deps = []
     spec_all_deps = []
     bootstrap_direct_deps = []
     bootstrap_all_deps = []
 
     for dep in ctx.attr.deps:
-        if JsInfo in dep:
-            spec_all_deps.append(dep[JsInfo].transitive_sources)
-            spec_all_deps.append(dep[JsInfo].npm_sources)
-        elif JSModuleInfo in dep:
+        if JSModuleInfo in dep:
             spec_all_deps.append(dep[JSModuleInfo].sources)
+            spec_direct_deps.append(dep[JSModuleInfo].direct_sources)
         else:
             spec_all_deps.append(dep[DefaultInfo].files)
+            spec_direct_deps.append(dep[DefaultInfo].files)
 
     for dep in ctx.attr.bootstrap:
-        if JsInfo in dep:
-            bootstrap_all_deps.append(dep[JsInfo].transitive_sources)
-            bootstrap_all_deps.append(dep[JsInfo].npm_sources)
-            bootstrap_direct_deps.append(dep[JsInfo].sources)
-        elif JSModuleInfo in dep:
+        if JSModuleInfo in dep:
             bootstrap_all_deps.append(dep[JSModuleInfo].sources)
             bootstrap_direct_deps.append(dep[JSModuleInfo].direct_sources)
         else:
@@ -79,18 +74,12 @@ def _spec_entrypoint_impl(ctx):
     )
 
     out_depset = depset([output])
-    transitive_deps = depset(transitive = [out_depset] + spec_all_deps + bootstrap_all_deps)
 
     return [
         DefaultInfo(files = out_depset),
-        js_info(
-            target = ctx.label,
-            sources = out_depset,
-            transitive_sources = transitive_deps,
-        ),
         JSModuleInfo(
             direct_sources = out_depset,
-            sources = transitive_deps,
+            sources = depset(transitive = [out_depset] + spec_all_deps + bootstrap_all_deps),
         ),
     ]
 

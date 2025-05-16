@@ -6,16 +6,12 @@
  * found in the LICENSE file at https://angular.io/license
  */
 
-import fs from 'node:fs';
+import {readFileSync} from 'fs';
+import {runfiles} from '@bazel/runfiles';
 import browserSync from 'browser-sync';
-import http from 'node:http';
-import path from 'node:path';
+import http from 'http';
+import path from 'path';
 import send from 'send';
-import assert from 'node:assert';
-
-// The current working directory is the runfiles root.
-const runfilesRoot = process.env['RUNFILES']!;
-assert(runfilesRoot, 'Expected `RUNFILES` to be set.');
 
 /**
  * Http Server implementation that uses browser-sync internally. This server
@@ -30,7 +26,22 @@ export class HttpServer {
   server = browserSync.create();
 
   /** Options of the browser-sync server. */
-  options: browserSync.Options;
+  options: browserSync.Options = {
+    open: false,
+    online: false,
+    port: this.port,
+    notify: false,
+    ghostMode: false,
+    server: {
+      directory: false,
+      middleware: [
+        (req, res) => {
+          this._corsMiddleware(req, res);
+          this._bazelMiddleware(req, res);
+        },
+      ],
+    },
+  };
 
   constructor(
     readonly port: number,
@@ -40,23 +51,6 @@ export class HttpServer {
     private _environmentVariables: string[] = [],
     private _relaxCors: boolean = false,
   ) {
-    this.options = {
-      open: false,
-      online: false,
-      port: this.port,
-      notify: false,
-      ghostMode: false,
-      server: {
-        directory: false,
-        middleware: [
-          (req, res) => {
-            this._corsMiddleware(req, res);
-            this._bazelMiddleware(req, res);
-          },
-        ],
-      },
-    };
-
     if (enableUi === false) {
       this.options.ui = false;
     }
@@ -137,15 +131,12 @@ export class HttpServer {
     return new URL(reqURL, `http://_`).pathname;
   }
 
-  /** Resolves a given URL from the runfiles using a computed manifest path. */
+  /** Resolves a given URL from the runfiles using the corresponding manifest path. */
   private _resolveUrlFromRunfiles(url: string): string | null {
     for (let rootPath of this._rootPaths) {
-      const fragment = path.posix.join(rootPath, getManifestPath(url));
-      const diskPath = path.join(runfilesRoot, fragment);
-
-      if (fs.existsSync(diskPath)) {
-        return diskPath;
-      }
+      try {
+        return runfiles.resolve(path.posix.join(rootPath, getManifestPath(url)));
+      } catch {}
     }
     return null;
   }
@@ -164,7 +155,7 @@ export class HttpServer {
       }
 
       const variables: Record<string, string | undefined> = {};
-      const content = fs.readFileSync(indexPath, 'utf8');
+      const content = readFileSync(indexPath, 'utf8');
 
       // Populate variables object that will be inlined.
       this._environmentVariables.forEach((name) => (variables[name] = process.env[name]));

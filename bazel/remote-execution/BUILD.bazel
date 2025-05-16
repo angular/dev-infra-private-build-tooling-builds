@@ -7,6 +7,7 @@ platform(
     constraint_values = [
         "@platforms//os:linux",
         "@platforms//cpu:x86_64",
+        "@bazel_tools//tools/cpp:clang",
     ],
     exec_properties = {
         # We use the official Puppeteer docker image that supports launching browsers. Note that we
@@ -43,5 +44,6 @@ filegroup(
     srcs = [
         "BUILD.bazel",
         "index.bzl",
+        "@npm//@angular/build-tooling/bazel/remote-execution/cpp:files",
     ],
 )

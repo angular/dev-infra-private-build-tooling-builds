@@ -7,7 +7,7 @@
  */
 
 import {createInterface} from 'readline';
-import {HttpServer} from './server.mjs';
+import {HttpServer} from './server';
 
 // ibazel will write this string after a successful build.
 const ibazelNotifySuccessMessage = 'IBAZEL_BUILD_COMPLETED SUCCESS';

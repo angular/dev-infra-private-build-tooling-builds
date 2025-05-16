@@ -1,14 +1,3 @@
-load("@aspect_rules_ts//ts:defs.bzl", "ts_config")
-load("@devinfra_npm//:defs.bzl", "npm_link_all_packages")
-
-npm_link_all_packages()
-
-ts_config(
-    name = "tsconfig",
-    src = "tsconfig.json",
-    visibility = ["@npm//@angular/build-tooling/bazel:__subpackages__"],
-)
-
 filegroup(
     name = "static_files",
     srcs = [
@@ -26,12 +15,12 @@ filegroup(
         "@npm//@angular/build-tooling/bazel/esbuild:files",
         "@npm//@angular/build-tooling/bazel/git-toolchain:files",
         "@npm//@angular/build-tooling/bazel/http-server:files",
+        "@npm//@angular/build-tooling/bazel/integration:files",
         "@npm//@angular/build-tooling/bazel/karma:files",
         "@npm//@angular/build-tooling/bazel/map-size-tracking:files",
         "@npm//@angular/build-tooling/bazel/private:files",
         "@npm//@angular/build-tooling/bazel/remote-execution:files",
         "@npm//@angular/build-tooling/bazel/spec-bundling:files",
-        "@npm//@angular/build-tooling/bazel/ts_project:files",
     ],
     visibility = ["//:npm"],
 )

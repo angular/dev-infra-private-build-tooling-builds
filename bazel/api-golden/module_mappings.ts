@@ -9,6 +9,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
+import {runfiles} from '@bazel/runfiles';
+
 /** Regular expression that matches a scoped type package name. */
 const scopedTypesPackageRegex = /^@types\/([^_\/]+)__(.+)/;
 
@@ -16,11 +18,10 @@ const scopedTypesPackageRegex = /^@types\/([^_\/]+)__(.+)/;
  * Resolves type modules and returns corresponding path mappings and a
  * list of referenced files.
  */
-export async function resolveTypePackages(typeNames: string[]): Promise<{
+export async function resolveTypePackages(typePackageNames: string[]): Promise<{
   paths: Record<string, string[]>;
   typeFiles: string[];
 }> {
-  const typePackageNames = typeNames.map((t) => `@types/${t}`);
   const typeFiles = [];
   const paths: Record<string, string[]> = {};
 
@@ -44,9 +45,7 @@ async function resolveTypeDeclarationOfPackage(moduleName: string): Promise<{
   entryPointTypeFile: string;
   resolvedPackageDir: string;
 }> {
-  // We are always executing inside a `.runfiles` directory, inside the workspace directory,
-  // so we can access the repository by walking up one directory.
-  const pkgJsonPath = path.resolve('../npm/node_modules/' + moduleName + '/package.json');
+  const pkgJsonPath = runfiles.resolve(`npm/node_modules/${moduleName}/package.json`);
   const pkgJson = JSON.parse(await fs.promises.readFile(pkgJsonPath, 'utf8')) as {
     types?: string;
     typings?: string;
