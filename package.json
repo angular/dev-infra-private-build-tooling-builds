@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-4fa572d7c05565cfe7f8ac5969765e1cead899e1",
+  "version": "0.0.0-ab3f40d972bd0afa0b0373a7a1d2d1fb532dfb22",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -59,7 +59,7 @@
     "@angular/compiler": "20.0.0",
     "@angular/compiler-cli": "20.0.0",
     "@angular/core": "20.0.0",
-    "@angular/fire": "^19.0.0-rc",
+    "@angular/fire": "^20.0.0-rc",
     "@angular/forms": "20.0.0",
     "@angular/material": "20.0.0",
     "@angular/platform-browser": "20.0.0",
