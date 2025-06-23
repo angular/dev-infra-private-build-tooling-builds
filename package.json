@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-5d37c5b79e8a883e4ea769ac7c837dba69c07f60",
+  "version": "0.0.0-45faf1bab9ea289fdeb2962727e054305645864a",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -37,7 +37,7 @@
     "@types/ws": "8.18.1",
     "@types/yargs": "^17.0.0",
     "browser-sync": "^3.0.0",
-    "prettier": "3.5.3",
+    "prettier": "3.6.0",
     "protractor": "^7.0.0",
     "selenium-webdriver": "^4.18.1",
     "send": "^1.0.0",
