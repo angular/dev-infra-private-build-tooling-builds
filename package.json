@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-45faf1bab9ea289fdeb2962727e054305645864a",
+  "version": "0.0.0-e668ff113aeb6d8f5ef438f9e903121a8b197bec",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -86,7 +86,7 @@
     "@octokit/webhooks-definitions": "3.67.3",
     "@octokit/webhooks-types": "7.6.1",
     "@openid/appauth": "^1.3.1",
-    "@pnpm/dependency-path": "^1000.0.5",
+    "@pnpm/dependency-path": "^1001.0.0",
     "@rollup/plugin-commonjs": "^28.0.0",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@types/babel__core": "^7.1.19",
