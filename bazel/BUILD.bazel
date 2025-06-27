@@ -20,7 +20,6 @@ filegroup(
         "filter_outputs.bzl",
         "@npm//@angular/build-tooling/bazel/api-golden:files",
         "@npm//@angular/build-tooling/bazel/app-bundling:files",
-        "@npm//@angular/build-tooling/bazel/benchmark:files",
         "@npm//@angular/build-tooling/bazel/browsers:files",
         "@npm//@angular/build-tooling/bazel/constraints:files",
         "@npm//@angular/build-tooling/bazel/esbuild:files",
