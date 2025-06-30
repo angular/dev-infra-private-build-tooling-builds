@@ -1,6 +1,6 @@
 {
   "name": "@angular/build-tooling",
-  "version": "0.0.0-d44be7e28087c3499d70dda9859d51c1cd3fe1bf",
+  "version": "0.0.0-16978de33ad399cd865cf3c06aae8ff622129f18",
   "private": true,
   "scripts": {
     "ng-dev": "bash ./tools/local-dev.sh",
@@ -16,7 +16,6 @@
   },
   "packageManager": "yarn@4.6.0",
   "dependencies": {
-    "@angular/benchpress": "0.3.0",
     "@angular/build": "19.1.0-rc.0",
     "@babel/core": "^7.16.0",
     "@babel/plugin-proposal-async-generator-functions": "^7.20.1",
@@ -160,8 +159,5 @@
     "re2": {
       "built": false
     }
-  },
-  "resolutions": {
-    "@angular/benchpress/@angular/core": "19.1.0-rc.0"
   }
 }
