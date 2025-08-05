@@ -12,10 +12,10 @@ ts_project(
     srcs = [
         "find_entry_points.ts",
         "index_npm_packages.cts",
-        "interop_module_mappings.ts",
         "path-normalize.ts",
         "test_api_report.ts",
     ],
+    declaration = True,
     tsconfig = "@npm//@angular/build-tooling/bazel:tsconfig",
     deps = [
         "@npm//@angular/build-tooling/bazel:node_modules/@microsoft/api-extractor",

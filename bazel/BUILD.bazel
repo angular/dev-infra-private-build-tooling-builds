@@ -7,6 +7,9 @@ ts_config(
     name = "tsconfig",
     src = "tsconfig.json",
     visibility = ["@npm//@angular/build-tooling/bazel:__subpackages__"],
+    deps = [
+        "@npm//@angular/build-tooling/bazel:node_modules/@types/node",
+    ],
 )
 
 filegroup(
